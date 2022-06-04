@@ -1,21 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   const wave = () => {};
   return (
-    <div className="mainContainer">
-      <div className="dataContainer">
-        <div className="header">👋 Hey there!</div>
+    <div className="p-4">
+      <div className="flex flex-col text-center justify-center item-center gap-y-4">
+        <div className="text-3xl font-bold ">👋 Hey there!</div>
 
-        <div className="bio">
-          I am farza and I worked on self-driving cars so that's pretty cool
-          right? Connect your Ethereum wallet and wave at me!
+        <div className="text-xl ">
+          I am Amir! Connect your Ethereum wallet and wave at me!
         </div>
-
-        <button className="waveButton" onClick={wave}>
-          Wave at Me
-        </button>
+        <div>
+          <button
+            className="p-2 w-fit bg-green-500 text-white rounded-md transition duration-300 hover:bg-green-700"
+            onClick={wave}
+          >
+            Wave at Me
+          </button>
+        </div>
       </div>
     </div>
   );
