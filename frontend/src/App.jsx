@@ -62,6 +62,9 @@ function App() {
         <div className="text-xl ">
           I am Amir! Connect your Ethereum wallet and wave at me!
         </div>
+        {currentAccount && (
+          <div className="italic text-sm text-gray-400">{`Wallet Connected: ${currentAccount}`}</div>
+        )}
         <div className="flex item-center justify-center gap-3">
           <button
             className="p-2 w-fit bg-green-500 text-white rounded-md transition duration-300 hover:bg-green-700"
