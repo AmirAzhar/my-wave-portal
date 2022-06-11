@@ -6,6 +6,8 @@ import {
   connectWallet,
 } from "./lib/walletConnection";
 
+import { sing } from "./lib/sing";
+
 function App() {
   const [currentAccount, setCurrentAccount] = useState("");
 
@@ -14,8 +16,6 @@ function App() {
       if (res) setCurrentAccount(res);
     });
   };
-
-  const wave = () => {};
 
   useEffect(() => {
     checkIfWalletIsConnected().then((res) => {
@@ -37,7 +37,7 @@ function App() {
         <div className="flex item-center justify-center gap-3">
           <button
             className="p-2 w-fit bg-green-500 text-white rounded-md transition duration-300 hover:bg-green-700"
-            onClick={wave}
+            onClick={sing}
           >
             Wave at Me
           </button>
