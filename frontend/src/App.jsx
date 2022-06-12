@@ -6,7 +6,7 @@ import {
   connectWallet,
 } from "./lib/walletConnection";
 
-import { sing } from "./lib/sing";
+import { addNewSong } from "./lib/sing";
 
 function App() {
   const [currentAccount, setCurrentAccount] = useState("");
@@ -37,9 +37,9 @@ function App() {
         <div className="flex item-center justify-center gap-3">
           <button
             className="p-2 w-fit bg-green-500 text-white rounded-md transition duration-300 hover:bg-green-700"
-            onClick={sing}
+            onClick={addNewSong}
           >
-            Wave at Me
+            Add Song!
           </button>
           {!currentAccount && (
             <button
